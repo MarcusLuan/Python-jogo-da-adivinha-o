@@ -1,0 +1,11 @@
+import random
+e = 0
+num = random.randint(0, 10)
+r = int(input("Adivinhe o número que pensei de 0 á 10: "))
+while r != num:
+  e += 1
+  if r < num:
+    r = int(input("Mais...Você errou tente novamente: "))
+  elif r > num:
+    r = int(input("Menos...Você errou tente novamente: "))
+print(f"Você acertou o número {num} você errou {e} vezes")
